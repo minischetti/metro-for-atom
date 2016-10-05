@@ -7,15 +7,19 @@
 
 .btn {
   color: lighten(@text-color, 6%);
-  background-color: @button-background-color;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,.1) !important;
+  text-transform: uppercase;
   &:hover,
   &:focus {
     color: @text-color-highlight;
-    background-color: @button-background-color-hover;
+    background-color: transparent;
+    border-color: @accent !important;
   }
   &:active {
     color: fade(@text-color-selected, 66%);
-    background-color: darken(@button-background-color, 2%);
+    background-color: transparent;
+    border-color: @accent !important;
   }
   &.selected {
     color: @text-color-selected;

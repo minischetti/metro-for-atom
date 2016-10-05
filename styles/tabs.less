@@ -16,9 +16,21 @@
     font-size: @font-size;
     border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    text-align: center;
+    flex: 2;
+    width: initial;
+
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
+      border-right-color: transparent;
+      border-bottom: 1px solid @accent;
+      flex: 2;
+      width: initial;
+    }
+
+    .title {
+      padding: 0 !important;
     }
 
 

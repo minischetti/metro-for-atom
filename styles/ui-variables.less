@@ -33,14 +33,18 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(222,6%,22%);
-@base-border-color:     darken(@base-background-color, 8%);
+@base-background-color: hsl(0,0%,8%);
+@base-background-light-color: hsl(0,0%,10%);
+@base-border-color:     darken(@base-background-color, 2%);
+
+// Accent color
+@accent: hsl(261,77%,51%);
 
 // Component colors
-@pane-item-background-color: @base-background-color;
+@pane-item-background-color: @base-background-light-color;
 @pane-item-border-color:     @base-border-color;
 
-@input-background-color: @app-background-color;
+@input-background-color: darken(@base-background-color, 3%);
 @input-border-color:     @base-border-color;
 
 @tool-panel-background-color: @base-background-color;
@@ -63,10 +67,10 @@
 @tab-bar-background-color:    @base-background-color;
 @tab-bar-border-color:        @base-border-color;
 @tab-background-color:        @tab-bar-background-color;
-@tab-background-color-active: lighten(@tab-bar-background-color, 10%);
+@tab-background-color-active: lighten(@tab-bar-background-color, 5%);
 @tab-border-color:            @base-border-color;
 
-@tree-view-background-color: @base-background-color;
+@tree-view-background-color: lighten(@base-background-color, 5%);
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
@@ -77,8 +81,8 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
-@input-font-size: 14px;
+@font-size: 11px;
+@input-font-size: 11px;
 
 @disclosure-arrow-size: 12px;
 
@@ -87,8 +91,8 @@
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 30px;
+@tab-height: 40px;
 
 // Misc
-@component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@component-border-radius: 0;
+@font-family: 'Roboto', '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;

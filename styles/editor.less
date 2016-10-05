@@ -9,10 +9,11 @@ atom-text-editor[mini] {
   padding-left: @component-padding/2;
   color: @text-color;
   border-radius: @component-border-radius;
-  background-color: @input-background-color;
+  background-color: transparent;
+  border: 1px solid @input-background-color;
 
   &.is-focused {
-    background-color: darken(@input-background-color, 5%);
+    border-color: @accent;
   }
 
   &, // <-- Deprecated. The `&,` can be removed once the Shadow DOM can't be turned off in the settings.
