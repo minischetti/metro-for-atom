@@ -10,6 +10,7 @@
   background-color: transparent;
   border: 1px solid rgba(255,255,255,.1) !important;
   text-transform: uppercase;
+
   &:hover,
   &:focus {
     color: @text-color-highlight;
@@ -63,5 +64,13 @@
 // Button Group -----------------------
 
 .btn-group > .btn {
-  border-color: hsla(0,0%,0%,.2);;
+  //Avoid overlapping borders by only applying a right border to the last button
+  &:not(:last-child) {
+    border-right-color: transparent !important;
+
+    //Re-enable right border on hover
+    &:hover, &:focus {
+      border-right-color: @accent !important;
+    }
+  }
 }
