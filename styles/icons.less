@@ -1,0 +1,27 @@
+.icon-question:before {
+  line-height: @tab-height;
+  font-family: 'Ionicons' !important;
+  content: "\f445";
+}
+
+.icon-diff-modified:before, .icon-diff-added:before, .icon-package:before, .section-heading.icon:before {
+  display: none;
+}
+
+//Download Icons
+.icon-cloud-download:before {
+  font-family: 'Ionicons' !important;
+  content: "\f407";
+}
+
+//Tree Arrows
+.list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item::before, .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+  font-family: 'Ionicons' !important;
+  line-height: @component-line-height;
+  top: 0;
+  content: "\f3d3";
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+  content: "\f3d0";
+}
